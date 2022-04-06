@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/big-project-portfolio/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a id="about" href="#about">About</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        <div id="text"class="text">
+            <img src="/big-project-portfolio/images/273241157_686160079077895_9075650239046493357_n.jpg" alt="me">           
+            <div class="text-contain">
+                <button>Greetings!</button>
+                <h2>My name is</h2>
+                <h1>Joshua Miguel M. Toribio</h1>
+                <h3>Web Developer</h3>
+                <p>I'm a web developer with a passion for creating beautiful and functional websites. I'm currently working on my portfolio website. I'm looking for a job in the web development field.</p>
+            </div>     
+        </div>
+        <div id="social1" class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/JoshuaToribio15/"><img src="/big-project-portfolio//images/facebook.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/joshuatoribio18/"><img src="/big-project-portfolio//images/instagram.png" alt=""></a></li>
+                <li><a href="https://twitter.com/_MiguelJoshua"><img src="/big-project-portfolio//images/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        /* Function to open social div */
+        var social = document.getElementById("social1");
+        var contact = document.getElementById("contact");
+        var transform = 100+"%";
+            contact.onclick = function() {
+                if (transform == 100+"%") {
+                    transform = 10+"%"
+                    social.style.transform = "translateX(10%)";
+                } else {
+                    transform = 100+"%"
+                    social.style.transform = "translateX(100%)";
+                }
+            }
+    </script>  
+        
+</html>

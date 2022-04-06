@@ -25,6 +25,7 @@ nav {
     align-items: center;
     flex-direction: column;
     text-transform: uppercase;
+    animation: Intro 2s;
 }
 nav ul {
     transform: translateY(60%);
